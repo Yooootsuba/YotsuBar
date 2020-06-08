@@ -2,8 +2,6 @@
 
 A progress bar module in Python
 
-## Demo
-
 ![image](https://github.com/Yooootsuba/YotsuBar/blob/master/demo.gif)
 
 ## Installation
