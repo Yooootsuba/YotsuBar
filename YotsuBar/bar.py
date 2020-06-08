@@ -37,13 +37,9 @@ class YotsuBar:
                                                 self.bar_prefix,
                                                 (int(self.index / self.max * self.width) * self.bar_fill_char).ljust(self.width, ' '),
                                                 self.bar_suffix,
-                                                self.get_percent(),
+                                                self.index / self.max * 100,
                                                 self.right_text))
         sys.stdout.flush()
-
-
-    def get_percent(self):
-        return self.index / self.max * 100
 
 
     def show_top_text(self):
