@@ -1,7 +1,5 @@
 # YotsuBar
 
-A progress bar module in Python
-
 ![image](https://github.com/Yooootsuba/YotsuBar/blob/master/demo.gif)
 
 ## Installation
