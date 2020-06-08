@@ -57,6 +57,13 @@ for i in range(100):
     bar.flush()
 ```
 
+Output
+
+```
+           [                     YotsuBar                     ]
+Processing [==================================================] 100% [1/2]
+```
+
 Allow to use context manager operation and hide cursor temporarily
 
 ```py
