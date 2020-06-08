@@ -13,7 +13,7 @@ $ git clone https://github.com/Yooootsuba/YotsuBar.git
 2. Change the working directory
 
 ```sh
-cd YotsuBar
+$ cd YotsuBar
 ```
 
 3. Install the package
