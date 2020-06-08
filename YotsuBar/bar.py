@@ -8,7 +8,6 @@ class YotsuBar:
                  max           = 100,
                  width         = 50,
                  top_text      = None,
-                 top_text_attr = True,
                  left_text     = '',
                  right_text    = '',
                  bar_prefix    = '[',
@@ -46,6 +45,9 @@ class YotsuBar:
 
 
     def show_top_text(self):
+        if self.top_text == None:
+            return
+
         ''' Will look like this : '''
         ''' [                     YotsuBar                     ] '''
 
