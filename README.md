@@ -2,6 +2,10 @@
 
 A progress bar module in Python
 
+## Demo
+
+![image](https://github.com/Yooootsuba/YotsuBar/blob/master/demo.gif)
+
 ## Installation
 
 1. Clone this project
@@ -21,3 +25,6 @@ cd YotsuBar
 ```sh
 $ python setup.py install
 ```
+
+## Example
+
