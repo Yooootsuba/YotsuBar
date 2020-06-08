@@ -32,6 +32,9 @@ class YotsuBar:
 
 
     def flush(self):
+        ''' Will look like this : '''
+        ''' [==================================================] 100% '''
+
         self.index += 1
         sys.stdout.write('\r%s%s%s%s %d%%%s' % (self.left_text,
                                                 self.bar_prefix,
@@ -43,6 +46,9 @@ class YotsuBar:
 
 
     def show_top_text(self):
+        ''' Will look like this : '''
+        ''' [                     YotsuBar                     ] '''
+
         print('%s%s%s%s' % (len(self.left_text) * ' ',
                             self.bar_prefix,
                             self.top_text.center(self.width),
