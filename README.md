@@ -26,7 +26,7 @@ $ python setup.py install
 
 Customize your progress bar
 
-```sh
+```py
 import time
 from YotsuBar import YotsuBar
 
@@ -39,13 +39,13 @@ for i in range(50):
 
 Output
 
-```sh
+```
 |################################        | 80%
 ```
 
 Put the message anywhere
 
-```sh
+```py
 import time
 from YotsuBar import YotsuBar
 
@@ -59,7 +59,7 @@ for i in range(100):
 
 Allow to use context manager operation and hide cursor temporarily
 
-```sh
+```py
 import time
 from YotsuBar import YotsuBar
 
@@ -68,3 +68,7 @@ with YotsuBar(hide_cursor = True) as bar:
         time.sleep(0.01)
         bar.flush()
 ```
+
+## License
+
+MIT License
