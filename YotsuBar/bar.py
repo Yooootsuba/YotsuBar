@@ -47,10 +47,6 @@ class YotsuBar:
 
 
     def show_top_text(self):
-        len(self.left_text) * ' '
-        self.bar_prefix
-        self.bar_suffix
-
         print('%s%s%s%s' % (len(self.left_text) * ' ',
                             self.bar_prefix,
                             self.top_text.center(self.width),
