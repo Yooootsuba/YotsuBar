@@ -29,13 +29,9 @@ class YotsuBar:
             hide_cursor__()
             atexit__()
 
-
+            
     def next(self):
         self.index += 1
-        self.write()
-
-
-    def write(self):
         sys.stdout.write('\r%s%s%s%s %d%%%s' % (self.left_text,
                                                 self.bar_prefix,
                                                 (int(self.index / self.max * self.width) * self.bar_fill_char).ljust(self.width, ' '),
