@@ -12,7 +12,7 @@ ASCII_ART = '''
 
 print(ASCII_ART)
 
-bar = YotsuBar(left_text = 'YotsuBar ')
+bar = YotsuBar(left_text = 'YotsuBar ', hide_cursor = True)
 
 for i in range(100):
     time.sleep(0.05)

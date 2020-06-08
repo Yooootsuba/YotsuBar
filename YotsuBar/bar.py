@@ -1,4 +1,5 @@
 import sys
+from .cursor import hide_cursor__, atexit__
 
 
 class YotsuBar:
@@ -23,7 +24,10 @@ class YotsuBar:
         self.bar_prefix    = bar_prefix
         self.bar_fill_char = bar_fill_char
         self.bar_suffix    = bar_suffix
-        self.hide_cursor   = hide_cursor
+
+        if hide_cursor == True:
+            hide_cursor__()
+            atexit__()
 
 
     def next(self):
@@ -40,6 +44,6 @@ class YotsuBar:
                                                 self.right_text))
         sys.stdout.flush()
 
-        
+
     def get_percent(self):
         return self.index / self.max * 100
