@@ -43,7 +43,7 @@ Output
 |################################        | 80%
 ```
 
-Put the message anywhere
+Put the message or some info anywhere you want
 
 ```py
 import time
