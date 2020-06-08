@@ -16,7 +16,7 @@ bar = YotsuBar(top_text = 'YotsuBar', hide_cursor = True)
 bar.show_top_text()
 
 for i in range(100):
-    time.sleep(0.05)
+    time.sleep(0.03)
     bar.flush()
 
 print('\n')
