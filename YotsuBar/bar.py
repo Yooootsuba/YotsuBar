@@ -8,6 +8,7 @@ class YotsuBar:
                  max           = 100,
                  width         = 50,
                  top_text      = None,
+                 top_text_attr = True,
                  left_text     = '',
                  right_text    = '',
                  bar_prefix    = '[',
@@ -29,8 +30,8 @@ class YotsuBar:
             hide_cursor__()
             atexit__()
 
-            
-    def next(self):
+
+    def flush(self):
         self.index += 1
         sys.stdout.write('\r%s%s%s%s %d%%%s' % (self.left_text,
                                                 self.bar_prefix,
@@ -43,3 +44,14 @@ class YotsuBar:
 
     def get_percent(self):
         return self.index / self.max * 100
+
+
+    def show_top_text(self):
+        len(self.left_text) * ' '
+        self.bar_prefix
+        self.bar_suffix
+
+        print('%s%s%s%s' % (len(self.left_text) * ' ',
+                            self.bar_prefix,
+                            self.top_text.center(self.width),
+                            self.bar_suffix))
